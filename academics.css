@@ -1,0 +1,78 @@
+main{
+    background: url(banner.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.main{
+    background-color: white;
+    margin: 100px 25px 0 25px;
+    padding: 10px 30px;
+    text-align: left;
+}
+.dwnld-form{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #002f87;
+    color: white;
+    padding: 20px 50px;
+    max-width: 250px;
+    display: block;
+    transition: all ease-in-out .3s;
+}
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    text-align: left;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 22px;
+  }
+  
+  /* Add a slash  (/) each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #002f87;
+    content: "/\00a0";
+  }
+  
+  ul.breadcrumb li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #002f87;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+
+/* Academics departments section*/
+.academicDepartmentContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    grid-gap: 20px;
+    padding: 20px 2%;
+}
+.academicDepartmentContainer div{
+    max-width: 360px;
+    overflow: hidden;
+    transition: ease-in-out .4s;
+}
+.academicDepartmentContainer div:hover{
+    transform: scale(1.1);
+}
+.academicDepartmentContainer div h3{
+    height: 20px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1255px) and (min-width: 700px){
+    .academicDepartmentContainer{
+        grid-template-columns: repeat(2, 6fr);
+    }
+}
+@media screen and (max-width: 700px){
+    .academicDepartmentContainer{
+        grid-template-columns: repeat(1, 12fr) !important;
+    }
+}

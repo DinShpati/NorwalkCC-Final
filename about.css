@@ -1,0 +1,58 @@
+/*
+============================================
+
+This page is linked to the about page.
+- Layout and design
+
+=============================================
+*/
+
+main{
+    background: url(banner.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.main{
+    background-color: white;
+    margin: 100px 25px 0 25px;
+    padding: 10px 30px;
+    text-align: left;
+}
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    text-align: left;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 22px;
+  }
+  
+  /* Add a slash  (/) each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #002f87;
+    content: "/\00a0";
+  }
+  
+  ul.breadcrumb li a {
+      font-family: Arial, Helvetica, sans-serif;
+    color: #002f87;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  /* acreditation section */
+
+.acredditation_container{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}
+.acredditation_container div a{
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 23px;
+}

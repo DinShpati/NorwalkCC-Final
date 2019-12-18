@@ -1,0 +1,116 @@
+main{
+    background: url(banner.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.main{
+    background-color: white;
+    margin: 100px 25px 0 25px;
+    padding: 10px 30px;
+    text-align: left;
+}
+.dwnld-form{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #002f87;
+    color: white;
+    padding: 20px 50px;
+    max-width: 250px;
+    display: block;
+    transition: all ease-in-out .3s;
+}
+.dwnld-form:hover{
+    background-color: whitesmoke;
+    color:#002f87;
+}
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    text-align: left;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 22px;
+  }
+  
+  /* Add a slash  (/) each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #002f87;
+    content: "/\00a0";
+  }
+  
+  ul.breadcrumb li a {
+      font-family: Arial, Helvetica, sans-serif;
+    color: #002f87;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+
+/* main content grid*/
+
+.admissions_container{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    padding: 0 25px;
+}
+
+/* right section*/
+.admissions_container div a.main-btn{
+    display: inline-block;
+    margin: 0 0 40px 30%;
+}
+.admissions_container div p a{
+    color: black;
+}
+.admissions_container div p a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+/* left section*/
+
+.quick_link_list li{
+    margin: 8px 0;
+    color: #002f87;
+}
+.quick_link_list li:hover{
+    color:orange;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.hr{
+    background-color: rgba(128, 128, 128, 0.425);
+    height: 1px;
+    width: 250px;
+}
+
+.contact_us_list li h6{
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+.contact_us_list li p{
+    color: rgb(95, 95, 95);
+    font-family: Helvetica, sans-serif;
+}
+
+/* ad image */
+.adImg{
+    width: 80%;
+}
+
+/* special mobile grid */
+@media screen and (max-width:1100px){
+    /* admissions page mobile layout */
+
+    .admissions_container{
+        grid-template-columns: 1fr;
+    }
+    .adImg{
+        width: 50% !important;
+    }
+}
